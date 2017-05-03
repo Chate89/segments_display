@@ -33,7 +33,7 @@ function Digit() {
     this.yDL = this.y+this.al+this.sep+this.alT;
 
     // middle (horizontal) M
-    if (this.val == 0 || this.val == 1 || this.val == 7 || this.val == null) {
+    if (this.val == 0 || this.val == 1 || this.val == 7 || this.val == "*") {
       fill(this.offCol);
     } else {
       fill(this.onCol);
@@ -49,7 +49,7 @@ function Digit() {
 
     // up left segment (vertical) UL
     if (this.val == 1 || this.val == 2 || this.val == 3 || this.val == 7 ||
-       this.val == null || this.val == "-") {
+       this.val == "*" || this.val == "-") {
       fill(this.offCol);
     } else {
       fill(this.onCol);
@@ -64,7 +64,7 @@ function Digit() {
     endShape(CLOSE);
 
     // up segment (horizontal) U
-    if (this.val == 1 || this.val == 4 || this.val == null || this.val == "-") {
+    if (this.val == 1 || this.val == 4 || this.val == "*" || this.val == "-") {
       fill(this.offCol);
     } else {
       fill(this.onCol);
@@ -79,7 +79,7 @@ function Digit() {
     endShape(CLOSE);
 
     // up right segment (vertical) UD
-    if (this.val == 5 || this.val == 6 || this.val == null || this.val == "-") {
+    if (this.val == 5 || this.val == 6 || this.val == "*" || this.val == "-") {
       fill(this.offCol);
     } else {
       fill(this.onCol);
@@ -94,7 +94,7 @@ function Digit() {
     endShape(CLOSE);
 
     // down right segment (vertical) DR
-    if (this.val == 2 || this.val == null || this.val == "-") {
+    if (this.val == 2 || this.val == "*" || this.val == "-") {
       fill(this.offCol);
     } else {
       fill(this.onCol);
@@ -109,7 +109,7 @@ function Digit() {
     endShape(CLOSE);
 
     // down segment (horizontal) D
-    if (this.val == 1 || this.val == 4 || this.val == 7 || this.val == null || this.val == "-") {
+    if (this.val == 1 || this.val == 4 || this.val == 7 || this.val == "*" || this.val == "-") {
       fill(this.offCol);
     } else {
       fill(this.onCol);
@@ -125,7 +125,7 @@ function Digit() {
 
     // down left segment (vertical) DL
     if (this.val == 1 || this.val == 3 || this.val == 4 || this.val == 5 ||
-      this.val == 7 || this.val == 9 || this.val == null || this.val == "-") {
+      this.val == 7 || this.val == 9 || this.val == "*" || this.val == "-") {
       fill(this.offCol);
     } else {
       fill(this.onCol);
